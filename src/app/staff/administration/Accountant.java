@@ -3,10 +3,17 @@ package app.staff.administration;
 import app.staff.specialist.Cashier;
 import app.staff.specialist.Cleaning_woman;
 import app.staff.specialist.Seller;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Accountant {
+
+    @Autowired
     private Seller seller;
+
+    @Autowired
     private Cleaning_woman cleaningWoman;
+
+    @Autowired
     private Cashier cashier;
 
     public Seller getSeller() {
