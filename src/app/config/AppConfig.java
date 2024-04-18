@@ -30,5 +30,10 @@ public class AppConfig {
     public Accountant accountant(){
         return new Accountant();
     }
+
+     @Bean
+    public Director director(){
+        return new Director();
+    }
 }
 
